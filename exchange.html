@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body class="w-50 mx-auto bg-secondary">
+    <div class="m-5">
+
+        <div class="my-4">
+            <label class="d-inline" for="birim">Select base currency: </label><br>
+            <input type="text" list="currencies" id="unit1">
+            <datalist id="currencies">
+
+            </datalist>
+        </div>
+        <div class="my-4">
+            <label for="birim">Select target currency: </label><br>
+            <input type="text" list="currencies" id="unit2">
+            <datalist id="currencies">
+
+            </datalist>
+        </div>
+        <div class="my-4 "><br>
+            <label for="quantity">Enter amount: </label><br>
+            <input type="number" id="quantity" name="quantity"> 
+        </div>
+        <div class="my-4">
+            <button class="btn btn-success" id="exchange">exchange</button>
+        </div>
+        <div class="my-4">
+            <input type="text" id="result" readonly>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="exchange.js"></script>
+</body>
+
+</html>
